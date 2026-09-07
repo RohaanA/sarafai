@@ -215,34 +215,54 @@
 /* ---------------- seed data: 8 months of a real kiryana store's cash flows ---------------- */
 const MONTHS = ['Feb','Mar','Apr','May','Jun','Jul','Aug','Sep'];
 let transactions = [
-  {d:'2026-02-03',desc:'Metro Cash & Carry — stock purchase',src:'khata',amt:-142000},
-  {d:'2026-02-11',desc:'Daily sales week 2 (Easypaisa)',src:'wallet',amt:62000},
-  {d:'2026-02-24',desc:'Daily sales week 4 (JazzCash)',src:'wallet',amt:71000},
-  {d:'2026-03-02',desc:'Supplier invoice — Unilever distributor',src:'ocr',amt:-151000},
-  {d:'2026-03-12',desc:'Daily sales week 2 (Easypaisa)',src:'wallet',amt:69000},
-  {d:'2026-03-26',desc:'Daily sales week 4 (JazzCash)',src:'wallet',amt:75000},
-  {d:'2026-04-04',desc:'Metro Cash & Carry — stock purchase',src:'ocr',amt:-158000},
-  {d:'2026-04-10',desc:'Daily sales week 2 (Easypaisa)',src:'wallet',amt:74000},
-  {d:'2026-04-13',desc:'Ramadan bulk sale — wholesaler',src:'ocr',amt:88000},
-  {d:'2026-04-27',desc:'Daily sales week 4 (JazzCash)',src:'wallet',amt:82000},
-  {d:'2026-05-05',desc:'Supplier invoice — Unilever distributor',src:'ocr',amt:-162000},
-  {d:'2026-05-14',desc:'Daily sales week 2 (Easypaisa)',src:'wallet',amt:79000},
-  {d:'2026-05-28',desc:'Daily sales week 4 (JazzCash)',src:'wallet',amt:84000},
-  {d:'2026-06-03',desc:'Metro Cash & Carry — stock purchase',src:'khata',amt:-165000},
-  {d:'2026-06-16',desc:'Daily sales week 2 (Easypaisa)',src:'wallet',amt:81000},
-  {d:'2026-06-18',desc:'Eid inventory sale — receipts batch',src:'ocr',amt:96000},
-  {d:'2026-06-29',desc:'Daily sales week 4 (JazzCash)',src:'wallet',amt:86000},
-  {d:'2026-07-06',desc:'Supplier invoice — National Foods',src:'ocr',amt:-168000},
-  {d:'2026-07-15',desc:'Daily sales week 2 (Easypaisa)',src:'wallet',amt:84000},
-  {d:'2026-07-19',desc:'Corporate canteen order — ABC School',src:'ocr',amt:112000},
-  {d:'2026-07-30',desc:'Daily sales week 4 (JazzCash)',src:'wallet',amt:88000},
-  {d:'2026-08-04',desc:'Metro Cash & Carry — stock purchase',src:'ocr',amt:-170000},
-  {d:'2026-08-13',desc:'Daily sales week 2 (Easypaisa)',src:'wallet',amt:87000},
-  {d:'2026-08-22',desc:'Wholesale order — neighbourhood cafe',src:'ocr',amt:118000},
-  {d:'2026-08-31',desc:'Daily sales week 4 (JazzCash)',src:'wallet',amt:91000},
-  {d:'2026-09-03',desc:'Supplier invoice — Unilever distributor',src:'ocr',amt:-172000},
-  {d:'2026-09-05',desc:'Daily sales week 1 (Easypaisa)',src:'wallet',amt:46000},
-  {d:'2026-09-06',desc:'Daily sales week 1 (JazzCash)',src:'wallet',amt:49000},
+  // Feb — 160k verified revenue
+  {d:'2026-02-03',desc:'Metro Cash & Carry — stock purchase',src:'khata',amt:-85000},
+  {d:'2026-02-10',desc:'Weekly sales (Easypaisa)',src:'wallet',amt:29000},
+  {d:'2026-02-11',desc:'Weekly sales (Easypaisa)',src:'wallet',amt:29000},
+  {d:'2026-02-18',desc:'Weekly sales (JazzCash)',src:'wallet',amt:52000},
+  {d:'2026-02-26',desc:'Wholesale order — area dhaba',src:'ocr',amt:50000},
+  // Mar — 170k
+  {d:'2026-03-04',desc:'Supplier invoice — Unilever distributor',src:'ocr',amt:-88000},
+  {d:'2026-03-11',desc:'Weekly sales (Easypaisa)',src:'wallet',amt:30000},
+  {d:'2026-03-12',desc:'Weekly sales (Easypaisa)',src:'wallet',amt:30000},
+  {d:'2026-03-19',desc:'Weekly sales (JazzCash)',src:'wallet',amt:55000},
+  {d:'2026-03-27',desc:'Wholesale order — neighbourhood cafe',src:'ocr',amt:55000},
+  // Apr — 185k
+  {d:'2026-04-02',desc:'Supplier invoice — National Foods',src:'ocr',amt:-92000},
+  {d:'2026-04-09',desc:'Weekly sales (Easypaisa)',src:'wallet',amt:31000},
+  {d:'2026-04-10',desc:'Weekly sales (Easypaisa)',src:'wallet',amt:31000},
+  {d:'2026-04-17',desc:'Weekly sales (JazzCash)',src:'wallet',amt:60000},
+  {d:'2026-04-25',desc:'Ramadan bulk sale — wholesaler',src:'ocr',amt:63000},
+  // May — 190k
+  {d:'2026-05-05',desc:'Metro Cash & Carry — stock purchase',src:'ocr',amt:-95000},
+  {d:'2026-05-12',desc:'Weekly sales (Easypaisa)',src:'wallet',amt:32000},
+  {d:'2026-05-13',desc:'Weekly sales (Easypaisa)',src:'wallet',amt:32000},
+  {d:'2026-05-20',desc:'Weekly sales (JazzCash)',src:'wallet',amt:62000},
+  {d:'2026-05-28',desc:'Counter sales — khata entry',src:'khata',amt:64000},
+  // Jun — 205k
+  {d:'2026-06-03',desc:'Supplier invoice — Eid stock',src:'khata',amt:-97000},
+  {d:'2026-06-10',desc:'Weekly sales (Easypaisa)',src:'wallet',amt:33000},
+  {d:'2026-06-11',desc:'Weekly sales (Easypaisa)',src:'wallet',amt:33000},
+  {d:'2026-06-18',desc:'Weekly sales (JazzCash)',src:'wallet',amt:68000},
+  {d:'2026-06-26',desc:'Eid inventory sale — receipts batch',src:'ocr',amt:71000},
+  // Jul — 220k
+  {d:'2026-07-06',desc:'Supplier invoice — Unilever distributor',src:'ocr',amt:-100000},
+  {d:'2026-07-13',desc:'Weekly sales (Easypaisa)',src:'wallet',amt:35000},
+  {d:'2026-07-14',desc:'Weekly sales (Easypaisa)',src:'wallet',amt:35000},
+  {d:'2026-07-20',desc:'Corporate canteen order — ABC School',src:'ocr',amt:72000},
+  {d:'2026-07-29',desc:'Weekly sales (JazzCash)',src:'wallet',amt:78000},
+  // Aug — 235k
+  {d:'2026-08-04',desc:'Metro Cash & Carry — stock purchase',src:'ocr',amt:-102000},
+  {d:'2026-08-12',desc:'Weekly sales (Easypaisa)',src:'wallet',amt:37000},
+  {d:'2026-08-13',desc:'Weekly sales (Easypaisa)',src:'wallet',amt:37000},
+  {d:'2026-08-21',desc:'Weekly sales (JazzCash)',src:'wallet',amt:76000},
+  {d:'2026-08-30',desc:'Wholesale order — neighbourhood cafe',src:'ocr',amt:85000},
+  // Sep — 240k
+  {d:'2026-09-02',desc:'Supplier invoice — Habib Distributors',src:'ocr',amt:-104000},
+  {d:'2026-09-04',desc:'Weekly sales (Easypaisa)',src:'wallet',amt:39000},
+  {d:'2026-09-05',desc:'Weekly sales (Easypaisa)',src:'wallet',amt:39000},
+  {d:'2026-09-06',desc:'Weekly sales (JazzCash)',src:'wallet',amt:80000},
+  {d:'2026-09-06',desc:'Wholesale order — Al-Madina Cafe (B2B)',src:'ocr',amt:82000},
 ];
 
 /* ---------------- scoring engine (transparent, explainable — replaces black-box ML for MVP) ---------------- */
@@ -525,7 +545,7 @@ function renderTourTip(st, i){
     if(st.finish){
       endTour();
       switchTab('scan');
-      toast(`Click any sample receipt — watch Ahmed's score rise.`);
+      toast(`Click any sample receipt — see the score update in real time.`);
     } else showTourStep(i+1);
   };
   const back = document.getElementById('tourBack');
