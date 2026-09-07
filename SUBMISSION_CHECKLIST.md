@@ -18,7 +18,7 @@ gh repo create sarafai --public --source=. --push
 - [ ] Upload `SarafAI_Presentation.pptx` (8 slides, 44 KB)
 
 ## 4. Supporting attachments (optional)
-- [ ] Optional: record a 60-second screen capture of `index.html` demo (Win+G or OBS), attach as MP4
+- [x] `SarafAI_Demo.mp4` — 71-second narrated, captioned walkthrough of the guided tour (recorded from the live site)
 
 ## 5. Demo link (optional)
 - [ ] GitHub Pages: repo → Settings → Pages → Branch: main / root → Save

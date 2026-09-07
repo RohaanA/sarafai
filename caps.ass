@@ -1,0 +1,24 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Caption,Arial,42,&H00FFFFFF,&H000000FF,&H8C000000,&H00000000,-1,0,0,0,100,100,0,0,3,5,0,2,90,90,58,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.90,0:00:05.00,Caption,,0,0,0,,SarafAI — credit scoring for the invisible economy
+Dialogue: 0,0:00:05.20,0:00:11.40,Caption,,0,0,0,,Ahmed's store earns well, but banks see no history — so no loan
+Dialogue: 0,0:00:11.90,0:00:17.00,Caption,,0,0,0,,The score is explainable — six auditable cash-flow factors
+Dialogue: 0,0:00:17.40,0:00:22.50,Caption,,0,0,0,,A score becomes money — a collateral-free loan offer
+Dialogue: 0,0:00:23.00,0:00:28.10,Caption,,0,0,0,,The data? Receipts, khata pages & wallet histories
+Dialogue: 0,0:00:28.60,0:00:38.90,Caption,,0,0,0,,OCR (Qwen-VL, Alibaba Cloud) extracts every field from one photo
+Dialogue: 0,0:00:39.20,0:00:44.30,Caption,,0,0,0,,The merchant verifies in one tap
+Dialogue: 0,0:00:44.80,0:00:49.90,Caption,,0,0,0,,Every record joins one reconciled, fraud-checkable ledger
+Dialogue: 0,0:00:50.30,0:00:56.40,Caption,,0,0,0,,Scan. Verify. Score. Lend — one loop that banks the unbanked
+Dialogue: 0,0:00:57.00,0:01:06.20,Caption,,0,0,0,,Try it yourself — every scan updates the score in real time
+Dialogue: 0,0:01:06.50,0:01:10.90,Caption,,0,0,0,,SarafAI — credit for the invisible economy
