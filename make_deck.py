@@ -178,7 +178,7 @@ for i, (t, d) in enumerate(flows):
     txt(s, Inches(1.95), Inches(yy+0.18), Inches(3.3), Inches(0.5), t, size=17, bold=True, color=DTEAL)
     txt(s, Inches(5.3), Inches(yy+0.16), Inches(7.1), Inches(1.1), d, size=13.5, color=INK)
     yy += 1.62
-txt(s, Inches(0.6), Inches(6.95), Inches(12.1), Inches(0.4), "Zero-dependency web app \u2014 runs in any browser, works on a low-end Android phone over 3G.", size=13, bold=True, color=MUTED, align=PP_ALIGN.CENTER)
+txt(s, Inches(0.6), Inches(6.95), Inches(12.1), Inches(0.4), "Zero-dependency web app \u2014 opens with a built-in guided tour walking judges through the full loop. Runs in any browser, works on a low-end Android phone over 3G.", size=13, bold=True, color=MUTED, align=PP_ALIGN.CENTER)
 
 # ---------------- SLIDE 6 : ARCHITECTURE ----------------
 s = slide()

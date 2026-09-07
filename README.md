@@ -28,10 +28,12 @@ The MVP is a zero-dependency single-file web app:
 
 1. Open `index.html` in any browser. That's it — no install, no build step.
 
+**For judges:** the demo **auto-starts a guided tour** on first open — 8 steps walking the full loop from problem to loan offer, with a live OCR extraction running mid-tour. A "Start guided tour" button on the dashboard replays it anytime.
+
 **Demo script (60 seconds):**
-1. **Dashboard** — see the SME Credit Health Score for a sample Karachi kiryana store, with its six explainable score factors, cash-flow metrics, and a live collateral-free loan offer sized from actual monthly inflows.
-2. **Scan Receipt** — click any sample receipt (or drop an image). Watch Qwen-VL-style OCR extract date, counterparty, line items and amount with confidence scores, then confirm.
-3. The ledger updates and the **score instantly recalculates** — showing how a merchant's creditworthiness grows as they digitize more of their business.
+1. **Welcome → score** — the tour opens by framing the problem, then shows the SME Credit Health Score for a sample Karachi kiryana store: six explainable factors, cash-flow metrics, and a live collateral-free loan offer sized from actual monthly inflows.
+2. **Scan Receipt** — the tour auto-runs a sample receipt through OCR: date, counterparty, line items and amount extracted with confidence scores.
+3. **Confirm → rescore** — the receipt joins the verified ledger and the score recalculates live — showing how a merchant's creditworthiness grows as they digitize more of their business.
 
 ## Architecture (Production Design)
 
